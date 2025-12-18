@@ -1,0 +1,20 @@
+/* src/styles/admin.css */
+.admin-header {
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 2px solid darkred; padding-bottom: 20px; margin-bottom: 30px;
+}
+.admin-actions { display: flex; gap: 15px; align-items: center; }
+
+.admin-stats { display: flex; gap: 20px; margin-bottom: 40px; }
+.admin-stat-card {
+    flex: 1; background: white; padding: 20px; border-radius: 8px;
+    box-shadow: 0 2px 5px lightgray; text-align: center; border-top: 5px solid gold;
+}
+.admin-stat-num { font-size: 2rem; margin: 10px 0 0; fontWeight: bold; color: black; }
+
+.user-table-container { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px lightgray; }
+.user-table { width: 100%; border-collapse: collapse; }
+.user-table th { background: black; color: white; text-align: left; padding: 15px; }
+.user-table td { padding: 15px; border-bottom: 1px solid whitesmoke; }
+.delete-btn { background: red; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; }
+.delete-btn:hover { background: darkred; }

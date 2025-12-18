@@ -1,0 +1,26 @@
+/* src/styles/about.css */
+.about-page { margin-top: 40px; }
+
+.brand-intro {
+    text-align: center; background: white; padding: 40px;
+    border-radius: 10px; box-shadow: 0 4px 6px lightgray;
+    border-top: 5px solid orangered; margin-bottom: 40px;
+}
+.brand-intro h1 { color: darkred; font-size: 2.5rem; margin-bottom: 20px; }
+.brand-intro p { line-height: 1.6; color: dimgray; font-size: 1.1rem; }
+
+.mission-section { margin-bottom: 40px; padding: 20px; }
+.mission-title {
+    color: darkgoldenrod; border-bottom: 2px solid orange;
+    padding-bottom: 10px; display: inline-block;
+}
+.mission-text { line-height: 1.8; margin-top: 20px; }
+
+.contact-section {
+    text-align: center; background: white; padding: 40px;
+    border-radius: 10px; box-shadow: 0 4px 6px lightgray;
+}
+.contact-grid { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+.contact-card { min-width: 200px; padding: 20px; border-bottom: 3px solid red; }
+.contact-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.contact-card h3 { color: orangered; }
