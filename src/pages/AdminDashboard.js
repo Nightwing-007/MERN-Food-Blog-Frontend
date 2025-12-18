@@ -46,15 +46,15 @@ const AdminDashboard = () => {
                     <tbody>
                     <tr>
                         <td>1</td>
-                        <td>John Doe</td>
-                        <td>john@example.com</td>
+                        <td>Deepak</td>
+                        <td>deepak@gmail.com</td>
                         <td>User</td>
                         <td><button className="delete-btn">Delete</button></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Jane Smith</td>
-                        <td>jane@example.com</td>
+                        <td>Sujay</td>
+                        <td>sujay@google.com</td>
                         <td>User</td>
                         <td><button className="delete-btn">Delete</button></td>
                     </tr>

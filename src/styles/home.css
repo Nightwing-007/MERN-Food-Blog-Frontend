@@ -1,9 +1,5 @@
-/* src/styles/home.css */
 .home-hero {
-    /* Using named colors in gradient */
-    background: linear-gradient(rgba(black, 0.6), rgba(black, 0.6)), url('https://via.placeholder.com/1200x400');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(black, black, transparent);
     color: white;
     text-align: center;
     padding: 100px 20px;
