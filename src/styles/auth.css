@@ -1,25 +1,58 @@
-/* src/styles/auth.css */
 .auth-card {
-    max-width: 400px; margin: 50px auto; background: white; padding: 40px;
-    border-radius: 10px; box-shadow: 0 5px 15px lightgray;
-    border-top: 5px solid darkred;
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px lightgray;
+  border-top: 5px solid darkred;
 }
-.auth-title { text-align: center; color: darkred; }
-.auth-sub { text-align: center; color: gray; margin-bottom: 30px; }
+.auth-title {
+  text-align: center;
+  color: darkred;
+}
+.auth-sub {
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+}
 
-.auth-label { display: block; font-weight: bold; margin-bottom: 5px; }
+.auth-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 .auth-input {
-    width: 100%; padding: 12px; margin-bottom: 20px;
-    border: 1px solid lightgray; border-radius: 5px; box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .auth-btn {
-    width: 100%; padding: 12px;
-    background: linear-gradient(to right, orangered, orange);
-    color: white;
-    border: none; border-radius: 5px; cursor: pointer; font-size: 1.1rem; font-weight: bold;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, orangered, orange);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
 }
-.auth-btn:hover { background: gold; color: black; }
+.auth-btn:hover {
+  background: gold;
+  color: black;
+}
 
-.auth-footer { text-align: center; margin-top: 20px; }
-.auth-link { color: darkgoldenrod; text-decoration: none; font-weight: bold; }
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+.auth-link {
+  color: darkgoldenrod;
+  text-decoration: none;
+  font-weight: bold;
+}

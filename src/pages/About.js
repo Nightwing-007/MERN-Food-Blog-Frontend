@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/about.css';
+import './../styles/about.css';
 
 const About = () => {
     return (
@@ -26,22 +26,19 @@ const About = () => {
             </section>
 
             <section className="contact-section">
-                <h2 style={{color: 'var(--color-dark-red)', marginBottom: '30px'}}>Contact Us</h2>
+                <h2 style={{marginBottom: '30px'}}>Contact Us</h2>
                 <div className="contact-grid">
                     <div className="contact-card">
-                        <div className="contact-icon">👤</div>
                         <h3>Name</h3>
-                        <p>RVGR</p>
+                        <p>Deepak</p>
                     </div>
                     <div className="contact-card">
-                        <div className="contact-icon">📱</div>
                         <h3>Mobile Number</h3>
-                        <p>9363702220</p>
+                        <p>9876543210</p>
                     </div>
                     <div className="contact-card">
-                        <div className="contact-icon">📍</div>
                         <h3>Address</h3>
-                        <p>Line Medu Police Quatres<br />Salem City<br />Salem - 636006</p>
+                        <p>Sri Eshwar College of Engineering<br/>Kondampatti POST, Vadasithur via<br/>Kinathukadavu<br/>Coimbatore - 641202</p>
                     </div>
                 </div>
             </section>

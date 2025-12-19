@@ -17,7 +17,7 @@ body {
 .navbar {
     /* Simple Linear Gradient using named colors */
     background: linear-gradient(to right, darkred, red);
-    padding: 1rem 2rem;
+    padding: 16px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ body {
     box-shadow: 0 4px 6px gray;
 }
 
-.logo { font-size: 1.5rem; font-weight: bold; }
+.logo { font-size: 24px; font-weight: bold; }
 .nav-links { display: flex; gap: 20px; align-items: center; }
 .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; }
 .nav-links a:hover { color: gold; }

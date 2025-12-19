@@ -1,19 +1,46 @@
-/* src/styles/recipes.css */
-.recipes-page { margin-top: 40px; }
-.recipes-header { text-align: center; margin-bottom: 40px; }
-.recipes-header h1 { color: darkred; font-size: 2.5rem; }
-
-.filter-container { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; }
-.filter-btn {
-    padding: 8px 25px; border-radius: 20px; border: 2px solid gold;
-    background: white; color: black; cursor: pointer; font-weight: bold; transition: all 0.3s;
+.recipes {
+  margin-top: 40px;
 }
-.filter-btn:hover, .filter-btn.active {
-    background: linear-gradient(to right, orange, red); color: white;
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header h1 {
+  color: darkred;
+  font-size: 40px;
 }
 
-.recipe-card-wrapper {
-    background: white; width: 280px; border-radius: 10px;
-    box-shadow: 0 4px 10px lightgray; overflow: hidden; transition: transform 0.3s;
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
-.recipe-card-wrapper:hover { transform: translateY(-5px); }
+.filter {
+  padding: 8px 25px;
+  border-radius: 20px;
+  border: 2px solid gold;
+  background: white;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.filter:hover,
+.filter.active {
+  background: linear-gradient(to right, orange, red);
+  color: white;
+}
+
+.recipeCard {
+  background: white;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px lightgray;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.recipeCard:hover {
+  transform: translateY(-5px);
+}
