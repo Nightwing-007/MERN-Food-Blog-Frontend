@@ -16,12 +16,12 @@ const AdminDashboard = () => {
     try {
       const token = localStorage.getItem("jwt");
       const [usersRes, recipesRes] = await Promise.all([
-        fetch(`http://localhost:5000/api/users/admin/all`, {
+        fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/users/admin/all`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         }),
-        fetch(`http://localhost:5000/api/recipes`, {
+        fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/recipes`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -45,7 +45,7 @@ const AdminDashboard = () => {
     if (!window.confirm("Are you sure you want to delete this user?")) return;
     try {
       const token = localStorage.getItem("jwt");
-      await fetch(`http://localhost:5000/api/users/admin/${userId}`, {
+      await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/users/admin/${userId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -61,7 +61,7 @@ const AdminDashboard = () => {
     if (!window.confirm("Are you sure you want to delete this recipe?")) return;
     try {
       const token = localStorage.getItem("jwt");
-      await fetch(`http://localhost:5000/api/recipes/${recipeId}`, {
+      await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/recipes/${recipeId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,

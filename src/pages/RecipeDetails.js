@@ -16,7 +16,7 @@ const RecipeDetails = () => {
         const token = localStorage.getItem("jwt");
 
         const response = await fetch(
-          `http://localhost:5000/api/recipes/${id}`,
+          `${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/recipes/${id}`,
           {
             method: "GET",
             headers: {
@@ -30,13 +30,13 @@ const RecipeDetails = () => {
         if (data.status === "success") {
           setRecipe(data.data.recipe);
 
-          fetch(`http://localhost:5000/api/users/view/${id}`, {
+          fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/users/view/${id}`, {
             method: "POST",
             headers: { Authorization: `Bearer ${token}` },
           });
 
           const statsResponse = await fetch(
-            `http://localhost:5000/api/users/stats`,
+            `${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/users/stats`,
             {
               headers: { Authorization: `Bearer ${token}` },
             }
